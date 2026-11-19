@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Berry Café | Home</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                Berry Café 🍓
+            </a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" tabindex="-1"
+                id="navbarNav" aria-labelledby="navbarNavLabel">
+
+                <div class="drawer-header">
+                    <span class="drawer-title" id="navbarNavLabel">
+                        Menu
+                    </span>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <div class="nav nav-pills navbar-nav">
+
+                        <a class="nav-link active"
+                            aria-current="page"
+                            href="index.html">
+                            Home
+                        </a>
+
+                        <a class="nav-link"
+                            href="index.html#menu">
+                            Our Menu
+                        </a>
+
+                        <a class="nav-link"
+                            href="contact.html">
+                            Contact
+                        </a>
+
+                    </div>
+                </div>
+
+            </dialog>
+        </div>
+    </nav>
+
+
+
+    <main class="container py-5">
+
+        <h1>Welcome to Berry Café</h1>
+
+        <p>A little sweetness in every sip and bite.</p>
+
+
+
+        <div id="carouselStackedIndicators" class="carousel slide">
+
+            <div class="carousel-inner rounded-5">
+
+                <div class="carousel-item active">
+                    <img src="images/banner1.jpg"
+                        class="d-block w-100 ratio-16x9 object-fit-cover"
+                        alt="Strawberry milk with fresh strawberries">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/banner2.jpg"
+                        class="d-block w-100 ratio-16x9 object-fit-cover"
+                        alt="Blueberry cheesecake with fresh blueberries">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/banner3.jpg"
+                        class="d-block w-100 ratio-16x9 object-fit-cover"
+                        alt="Strawberry and blueberry desserts on a cafe table">
+                </div>
+
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center">
+
+                <div>
+                    <button class="btn-icon btn-sm" type="button"
+                        data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-icon-prev"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="btn-icon btn-sm" type="button"
+                        data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-icon-next"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div class="carousel-indicators">
+
+                    <button type="button"
+                        data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+
+                    <button type="button"
+                        data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                    <button type="button"
+                        data-bs-target="#carouselStackedIndicators"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <h2 class="mt-5">Our Berry Menu</h2>
+
+        <p>
+            Discover our favorite strawberry and blueberry
+            drinks and desserts!
+        </p>
+
+
+        <div class="row g-4" id="menu">
+
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/strawberry-milk.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="A glass of pink strawberry milk">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Strawberry Milk</h3>
+
+                        <p class="card-text">
+                            Fresh strawberry milk with a sweet
+                            and creamy taste.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Made with fresh strawberries,
+                                milk and a little sugar.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog1">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog1"
+                        aria-labelledby="berryDialogTitle1">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle1">
+                                Strawberry Milk
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            A refreshing drink for strawberry lovers!
+                            It pairs perfectly with a slice of cake.
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/strawberry-matcha.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="Strawberry matcha latte with pink and green layers">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Strawberry Matcha Latte
+                        </h3>
+
+                        <p class="card-text">
+                            A delicious mix of matcha and sweet
+                            strawberries.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Made with matcha, milk,
+                                strawberry puree and ice.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog2">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog2"
+                        aria-labelledby="berryDialogTitle2">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle2">
+                                Strawberry Matcha Latte
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            The earthy flavor of matcha goes
+                            perfectly with sweet strawberries.
+                            Enjoy it over ice!
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/strawberry-cake.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="Strawberry shortcake with whipped cream">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Strawberry Shortcake
+                        </h3>
+
+                        <p class="card-text">
+                            Soft sponge cake with fresh strawberries
+                            and fluffy cream.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Made with vanilla sponge cake,
+                                whipped cream and strawberries.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog3">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog3"
+                        aria-labelledby="berryDialogTitle3">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle3">
+                                Strawberry Shortcake
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Light, sweet and perfect for an afternoon
+                            treat. Try it with our strawberry milk!
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/blueberry-latte.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="Blueberry latte served in a glass">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Blueberry Latte</h3>
+
+                        <p class="card-text">
+                            A creamy latte with a sweet blueberry
+                            twist.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Made with espresso, milk
+                                and blueberry syrup.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog4">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog4"
+                        aria-labelledby="berryDialogTitle4">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle4">
+                                Blueberry Latte
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            A fun twist on a classic latte.
+                            Great for coffee and blueberry lovers!
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/blueberry-cheesecake.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="Blueberry cheesecake topped with berries">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">
+                            Blueberry Cheesecake
+                        </h3>
+
+                        <p class="card-text">
+                            Rich and creamy cheesecake topped
+                            with blueberries.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Made with cream cheese, biscuit
+                                crust and blueberry sauce.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog5">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog5"
+                        aria-labelledby="berryDialogTitle5">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle5">
+                                Blueberry Cheesecake
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            Creamy cheesecake with a fruity topping.
+                            A delicious choice with a cup of coffee!
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+
+            <div class="col-12 md:col-6 lg:col-4">
+                <section class="card h-100">
+
+                    <img src="images/blueberry-muffin.jpg"
+                        class="card-img-top w-100 ratio-4x3 object-fit-cover"
+                        alt="Golden blueberry muffin with fresh blueberries">
+
+                    <div class="card-body">
+
+                        <h3 class="card-title">Blueberry Muffin</h3>
+
+                        <p class="card-text">
+                            A soft and fluffy muffin filled
+                            with juicy blueberries.
+                        </p>
+
+                        <details class="accordion-item">
+                            <summary class="accordion-header">
+                                Details
+                            </summary>
+
+                            <div class="accordion-body">
+                                Baked with flour, milk, eggs
+                                and fresh blueberries.
+                            </div>
+                        </details>
+
+                        <button type="button"
+                            class="btn-solid theme-primary mt-3"
+                            data-bs-toggle="dialog"
+                            data-bs-target="#berryDialog6">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                    <dialog class="dialog" id="berryDialog6"
+                        aria-labelledby="berryDialogTitle6">
+
+                        <div class="dialog-header">
+                            <h4 id="berryDialogTitle6">
+                                Blueberry Muffin
+                            </h4>
+
+                            <button type="button" class="btn-close"
+                                data-bs-dismiss="dialog"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="dialog-body">
+                            A simple and tasty snack.
+                            Enjoy it with our blueberry latte!
+                        </div>
+
+                        <div class="dialog-footer">
+                            <button type="button"
+                                class="btn-solid theme-primary"
+                                data-bs-dismiss="dialog">
+                                Close
+                            </button>
+                        </div>
+
+                    </dialog>
+
+                </section>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <footer class="bg-1 text-center p-4 mt-5">
+        <p>© 2026 Berry Café. Made with love.</p>
+    </footer>
+
+
+    <script type="module"
+        src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
