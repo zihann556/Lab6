@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Berry Café | Contact</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar md:navbar-expand bg-1 fg-2">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="index.html">
+                Berry Café 🍓
+            </a>
+
+            <button class="btn-icon navbar-toggler" type="button"
+                data-bs-toggle="drawer"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"
+                    aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" tabindex="-1"
+                id="navbarNav" aria-labelledby="navbarNavLabel">
+
+                <div class="drawer-header">
+                    <span class="drawer-title"
+                        id="navbarNavLabel">Menu</span>
+
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="drawer"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <div class="nav nav-pills navbar-nav">
+
+                        <a class="nav-link"
+                            href="index.html">Home</a>
+
+                        <a class="nav-link"
+                            href="index.html#menu">Our Menu</a>
+
+                        <a class="nav-link active"
+                            aria-current="page"
+                            href="contact.html">Contact</a>
+
+                    </div>
+                </div>
+
+            </dialog>
+
+        </div>
+    </nav>
+
+
+    <main class="container py-5">
+
+        <h1>Contact Berry Café</h1>
+
+        <p>
+            Have a question or want to say hello?
+            We'd love to hear from you!
+        </p>
+
+        <form>
+
+            <div class="row g-4">
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+
+                        <label for="firstName" class="form-label">
+                            First Name
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            id="firstName"
+                            name="firstName"
+                            required>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+
+                        <label for="lastName" class="form-label">
+                            Last Name
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            id="lastName"
+                            name="lastName"
+                            required>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+
+                        <label for="email" class="form-label">
+                            Email Address
+                        </label>
+
+                        <input type="email"
+                            class="form-control"
+                            id="email"
+                            name="email"
+                            placeholder="name@example.com"
+                            required>
+
+                        <div class="form-text">
+                            We'll never share your email
+                            with anyone else.
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 md:col-6">
+                    <div class="form-field">
+
+                        <label for="inquiry" class="form-label">
+                            What can we help you with?
+                        </label>
+
+                        <select class="form-control"
+                            id="inquiry"
+                            name="inquiry"
+                            required>
+
+                            <option value="" selected disabled>
+                                Choose one...
+                            </option>
+
+                            <option value="general">
+                                General Inquiry
+                            </option>
+
+                            <option value="menu">
+                                Menu Question
+                            </option>
+
+                            <option value="event">
+                                Event Inquiry
+                            </option>
+
+                        </select>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+                    <div class="form-field">
+
+                        <label for="message" class="form-label">
+                            Message
+                        </label>
+
+                        <textarea class="form-control"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            required></textarea>
+
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-field">
+
+                        <input type="checkbox"
+                            id="consent"
+                            name="consent"
+                            class="check"
+                            required>
+
+                        <label for="consent">
+                            I agree to be contacted
+                            by Berry Café.
+                        </label>
+
+                    </div>
+                </div>
+
+
+                <div class="col-12">
+
+                    <button type="submit"
+                        class="btn-solid theme-primary">
+                        Submit
+                    </button>
+
+                </div>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <footer class="bg-1 text-center p-4 mt-5">
+        <p>© 2026 Berry Café. Made with love.</p>
+    </footer>
+
+
+    <script type="module"
+        src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
